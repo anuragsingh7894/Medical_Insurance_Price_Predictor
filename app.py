@@ -21,7 +21,7 @@ ROOT = Path(__file__).parent
 MODEL_PATH = ROOT / "best_tuned_model.pkl"
 
 # Image URL
-ILLUSTRATION_URL = "https://kommodo.ai/i/MG3ReKTfAFkjGIKODKWp"
+ILLUSTRATION_URL = "https://plain-apac-prod-public.komododecks.com/202610/29/MG3ReKTfAFkjGIKODKWp/image.png"
 
 # ------------------------------------------------------------
 # Custom CSS
