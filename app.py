@@ -20,10 +20,8 @@ st.set_page_config(
 ROOT = Path(__file__).parent
 MODEL_PATH = ROOT / "best_tuned_model.pkl"
 
-# CHANGE THIS to your actual image path
-ILLUSTRATION_PATH = Path(
-    r"D:\DS_Practice\Mini Project\Supervised_ml\assets\doctor_illustration.png"
-)
+# Image URL
+ILLUSTRATION_URL = "https://kommodo.ai/i/MG3ReKTfAFkjGIKODKWp"
 
 # ------------------------------------------------------------
 # Custom CSS
@@ -531,16 +529,10 @@ with input_col:
             )
 
 with art_col:
-    if ILLUSTRATION_PATH.is_file():
-        st.image(
-            str(ILLUSTRATION_PATH),
-            use_container_width=True,
-        )
-    else:
-        st.warning(
-            "Doctor illustration not found. "
-            "Please check ILLUSTRATION_PATH near the top of app.py."
-        )
+    st.image(
+        ILLUSTRATION_URL,
+        use_container_width=True,
+    )
 
 # ------------------------------------------------------------
 # Prepare input data
